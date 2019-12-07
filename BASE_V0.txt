@@ -1,0 +1,55 @@
+- Objectifs V0
+	- Liens entre les microservices => Récupérer les data d'un joueur 
+	- A partir du front récupérer les données d'un joueur.
+	- Envrionnement de test (Virtualbox + ouverture des ports)
+		=> 2 VM (FRONT / BACK(humain et datacontroller))
+	- Utilisation des microservices (Humans et DataController principalement)
+
+Technos :
+	- Dev. BACK 			=> Java 8 / Maven / Springboot / Hibernate /JPA
+	- Tests unitaires BACK		=> Junit / Mockito
+	- Tests d'intégration BACK	=> Cucumber / Gherkin
+	- Dev. FRONT			=> Angular 8
+	- Tests unitaires FRONT		=> Karma (moteur de tests) / Jasmine (langage d'assertion)
+	- Microservices
+	- Linux
+	- Docker / Docker registry
+	- Réseau
+	- BDD relationnelle PostgreSQL ou TimeSeries
+
+	
+Désirs :
+	- Yan => FRONT 			
+	- Mik => FRONT 
+	- Loi => Full  	
+	- Mic => Full	
+	- Ced => Full
+	- Ant => Full			 
+	
+Microservices :
+	microservice-humain 	 		=> Retourne un joueur, un entraineur ou un arbitre
+	microservice-datacontroller		=> Récupére les datas sur l'opta et stocke en base
+	microservice-encourters	 		=> Gère les journées, les équipes = BIGBOSS
+	microservice-mercato	 		=> Gére la phase achat de joueurs
+	microservice-simulationcontroller	=> Génère les notes des joueurs
+	microservice-user		 	=> Gestion de l'utilisateur
+	microservice-competitions		=> Gestion des compétitions (championnat / tournoi)
+	microservice-tools			=> Boite à outils / espace de partage
+
+	
+GIT 
+
+--------------- master  			=> PUSH que les versions finales = testée et validée
+--------------- Develop 			=> Version en cours de développement
+--------------- Dev-Feature-blablabla		=> Création d'une branche personnalisée pour le développement d'une nouvelle
+						fonctionnalité. Cette branche sera PUSH sur la Develop
+--------------- Dev-Bugfix-blablabla		=> Création d'une branche personnalisée pour la résolution de bug
+
+TOTAL : MASTER > DEVELOP > BRANCHE PERSO
+
+
+Taches à ajouter au board général
+	-> Confirmer la récupération des datas sur OPTA
+	-> Création des modèles sur le micro-service Humain
+	-> Confirmer la base 
+	-> Maquette front
