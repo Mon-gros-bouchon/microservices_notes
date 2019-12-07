@@ -1,22 +1,22 @@
-- Objectif V0
-	- Lien entre les micros services => Récupérer les data d'un joueur 
+- Objectifs V0
+	- Liens entre les micros-services => Récupérer les data d'un joueur 
 	- A partir du front récupérer les données d'un joueur.
 	- Envrionnement de test (Virtualbox + ouverture des ports)
-		- 2 VM (FRONT / BACK(humain et datacontroller))
-	- Utilisation des micros (humain et datacontroller principalement)
+		=> 2 VM (FRONT / BACK(humain et datacontroller))
+	- Utilisation des micro-services (Humans et DataController principalement)
 
-Techno
-	- Java / Maven / Springboot / Hibernate
+Technos :
+	- Java / Maven / Springboot / Hibernate /JPA
 	- Junit / Mockito
 	- Micro services
 	- Linux
 	- Docker / Docker registry
-	- Angular
+	- Angular / Karma (moteur de tests) / Jasmine (langage d'assertion)
 	- Réseau
-	- BDD relationnelle ou TimeSeries
+	- BDD relationnelle PostgreSQL ou TimeSeries
 
 	
-Désirs
+Désirs :
 	- Yan => FRONT 			
 	- Mik => FRONT 
 	- Loi => Full  	
@@ -24,22 +24,24 @@ Désirs
 	- Ced => Full
 	- Ant => Full			 
 	
-	
-microservice-humain 	 			=> Retourne un joueur
-microservice-datacontroller			=> Récupére les datas sur l'opta et stocke en base.
-microservice-encourters	 			=> Gère les journées les équipes = BIGBOSS
-microservice-mercato	 			=> Gére la partie achat
-microservice-simulationcontroller	=> Génére les notes des joueurs
-microservice-user		 			=> Gestion de l'utilisateur
-microservice-competitions			=> 
-microservice-tools
+Microservices :
+	microservice-humain 	 		=> Retourne un joueur, un entraineur ou un arbitre
+	microservice-datacontroller		=> Récupére les datas sur l'opta et stocke en base
+	microservice-encourters	 		=> Gère les journées, les équipes = BIGBOSS
+	microservice-mercato	 		=> Gére la phase achat de joueurs
+	microservice-simulationcontroller	=> Génère les notes des joueurs
+	microservice-user		 	=> Gestion de l'utilisateur
+	microservice-competitions		=> Gestion des compétitions (championnat / tournoi)
+	microservice-tools			=> Boite à outils / espace de partage
 
 	
 GIT 
 
---------------- MASTER  		(Push que les versions finales)
---------------- DEVELOP 		(Version en cours de developpement) 
---------------- BRANCHE PERSO	(Création d'une branche personnalisée pour le developpement d'une nouvelle fonctionnalité. Cette branche sera push sur la DEVELOP)
+--------------- master  			=> PUSH que les versions finales = testée et validée
+--------------- Develop 			=> Version en cours de développement
+--------------- Dev-Feature-blablabla		=> Création d'une branche personnalisée pour le développement d'une nouvelle
+						fonctionnalité. Cette branche sera PUSH sur la Develop
+--------------- Dev-Bugfix-blablabla		=> Création d'une branche personnalisée pour la résolution de bug
 
 TOTAL : MASTER > DEVELOP > BRANCHE PERSO
 
