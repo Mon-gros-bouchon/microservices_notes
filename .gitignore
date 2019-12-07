@@ -100,10 +100,6 @@ hs_err_pid*
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-.idea/
-target/
-*.iml
-
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
@@ -201,3 +197,7 @@ nbdist/
 # End of https://www.gitignore.io/api/java,eclipse,netbeans,jetbrains
 # Default ignored files
 /workspace.xml
+.idea/
+target/
+*.iml
+/wiki/
