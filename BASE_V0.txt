@@ -1,17 +1,19 @@
 - Objectifs V0
-	- Liens entre les micros-services => Récupérer les data d'un joueur 
+	- Liens entre les microservices => Récupérer les data d'un joueur 
 	- A partir du front récupérer les données d'un joueur.
 	- Envrionnement de test (Virtualbox + ouverture des ports)
 		=> 2 VM (FRONT / BACK(humain et datacontroller))
-	- Utilisation des micro-services (Humans et DataController principalement)
+	- Utilisation des microservices (Humans et DataController principalement)
 
 Technos :
-	- Java / Maven / Springboot / Hibernate /JPA
-	- Junit / Mockito
-	- Micro services
+	- Dev. BACK 			=> Java 8 / Maven / Springboot / Hibernate /JPA
+	- Tests unitaires BACK		=> Junit / Mockito
+	- Tests d'intégration BACK	=> Cucumber / Gherkin
+	- Dev. FRONT			=> Angular 8
+	- Tests unitaires FRONT		=> Karma (moteur de tests) / Jasmine (langage d'assertion)
+	- Microservices
 	- Linux
 	- Docker / Docker registry
-	- Angular / Karma (moteur de tests) / Jasmine (langage d'assertion)
 	- Réseau
 	- BDD relationnelle PostgreSQL ou TimeSeries
 
