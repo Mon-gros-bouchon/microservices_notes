@@ -31,7 +31,7 @@ DEPOT_LIST_NAME=(
     "Tools"
 )
 
-QJS_GIT_BASE_URL="https://github.com/Qui-je-suis"
+QJS_GIT_BASE_URL="https://gitlab.com/quijesuis"
 
 DEPOT_LIST_SIZE=${#DEPOT_LIST[@]}
 echo "Array size = "$DEPOT_LIST_SIZE
