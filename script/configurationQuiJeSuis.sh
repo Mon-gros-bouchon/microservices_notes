@@ -41,11 +41,10 @@ if [ ! -d "$LOGS_DIR" ]; then
     mkdir $LOGS_DIR
 fi
 
-
 # PARSE COMMAND LINE FOR ARGUMENTS
 DO_TEST=0
 
-#PARSE COMMAND LINE 
+# PARSE COMMAND LINE
 for i in "$@"
 do
     case $i in
